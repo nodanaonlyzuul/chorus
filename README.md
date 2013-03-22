@@ -1,6 +1,6 @@
 # Chorus
 
-Chorus is a very simple way to turn your mac into a chorus of [throat singers.](http://www.youtube.com/watch?v=DY1pcEtHI_w)
+Chorus is a very simple way to turn your mac into a chorus of [throat singers.](http://www.youtube.com/watch?v=zwi6gF-0mP4)
 It uses the `say` command.
 
 ## Installation
