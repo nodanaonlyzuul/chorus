@@ -1,0 +1,45 @@
+#!/usr/bin/env ruby
+
+require 'chorus'
+require 'optparse'
+
+options = {}
+
+opt_parser = OptionParser.new do |opts|
+  opts.banner = 'Usage: chorus [options] "your lyrics go here"'
+
+  opts.on('-v', '--voices Voices,You,Want,To,Sing', 'takes a comma-separated list of voices to use.') do |voices|
+    options[:voices] = voices.split(",").map(&:strip)
+  end
+
+  opts.on('-d', '--delay SECONDSOFDELAY', 'The number of seconds in delay') do |delay|
+    options[:delay] = delay
+  end
+
+  opts.on_tail('-v', '--version', 'Show version') do
+    puts 'Chorus version ' + Chorus::VERSION
+    exit
+  end
+
+  opts.on_tail("-h", "--help", "Show this message") do
+    puts opts
+    exit
+  end
+
+end
+
+begin
+  opt_parser.parse!
+rescue OptionParser::MissingArgument => e
+  puts "ERROR: #{e.message.capitalize}\n#{opt_parser}"
+  exit
+end
+
+if ARGV.length == 0
+  puts 'Hmmmm - I don\'t know that song - try "chorus -h" for help'
+  exit
+end
+
+options.merge!(:text => ARGV[0])
+
+Chorus.new(options)
