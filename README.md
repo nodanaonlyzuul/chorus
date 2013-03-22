@@ -20,6 +20,10 @@ It uses the `say` command.
 
 	$ chorus -d .0125 -v Kathy,Princess "Hey I just met you, This is crazy. Here's my number. Call me maybe?"
 
+	# Or Go Crazy....
+
+	bundle exec chorus -d .25 -v Fred,Fred,Fred,Fred,Fred,Fred,Fred,Fred,Fred,Fred,Fred,Fred,Fred,Fred,Fred,Fred,Fred,Fred "Echo Chamber Dub"
+
 ## Future Features
 
 * Passing say commands in.
