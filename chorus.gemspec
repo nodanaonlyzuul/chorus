@@ -6,11 +6,11 @@ require 'chorus/version'
 Gem::Specification.new do |gem|
   gem.name          = "chorus"
   gem.version       = Chorus::VERSION
-  gem.authors       = ["Stephen Schor"]
-  gem.email         = ["stephen@eastmedia.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.authors       = ["nodanaonlyzuul"]
+  gem.email         = ["beholdthepanda@gmail.com"]
+  gem.description   = %q{Using Ruby threads and mac's "say" command to make delay and chorus effects'}
+  gem.summary       = %q{Using Ruby threads and mac's "say" command to make delay and chorus effects'}
+  gem.homepage      = "https://github.com/nodanaonlyzuul/chorus"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
