@@ -11,6 +11,12 @@ It uses the @say@ command.
 
 	$ chorus "I just met you. This is crazy. Here's my number. Call me maybe?"
 	$ chorus -h
+		Usage: chorus [options] "your lyrics go here"
+		    -v Voices,You,Want,To,Sing,      takes a comma-separated list of voices to use.
+		        --voices
+		    -d, --delay SECONDSOFDELAY       The number of seconds in delay
+		        --version                    Show version
+		    -h, --help                       Show this message
 
 
 ## Future Features
