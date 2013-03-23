@@ -26,6 +26,7 @@ Chorus is turns your mac into a chorus of [throat singers](http://www.youtube.co
 ## Future Features
 
 * Passing say commands in.
+* Linux support
 
 ## Contributing
 
