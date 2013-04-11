@@ -11,7 +11,7 @@ Chorus is turns your mac into a chorus of [throat singers](http://www.youtube.co
 	$ chorus "I just met you. This is crazy. Here's my number. Call me maybe?"
 	$ chorus -h
 		Usage: chorus [options] "your lyrics go here"
-		    -v Voices,You,Want,To,Sing,      A comma-separated list of voices to use. Try multiple Voices with Fred*5,Kathy*2
+		    -v Voices,You,Want,To,Sing,      A comma-separated list of voices to use. Try multiple Voices with "Fred*5",Kathy*2"
 		        --voices
 		    -d, --delay SECONDSOFDELAY       The number of seconds in delay
 		        --version                    Show version
@@ -21,7 +21,7 @@ Chorus is turns your mac into a chorus of [throat singers](http://www.youtube.co
 
 	# Or Go Crazy....
 
-	$ chorus -v Fred*25 -d .25 "King Tubby On The Sound System"
+	$ chorus -v "Fred*25" -d .25 "King Tubby On The Sound System"
 
 ## Future Features
 
